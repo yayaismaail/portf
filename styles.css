@@ -482,13 +482,12 @@ textarea {
   .work {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 30px;
+    gap: 20px;
     background-color: #fff;
     border-radius: 16px;
     border: 1px solid #dfe1e6;
     padding: 15px;
-    margin: 10em;
+    margin: 7em;
   }
 
   /* .work:nth-child(even) {
@@ -517,6 +516,17 @@ textarea {
   .techs,
   .work-btn {
     margin: 35px 0;
+  }
+
+  .btn-hover:hover {
+    background-color: #6070ff;
+    color: #fff;
+    border: 1px solid #fff;
+    font-weight: 500;
+  }
+
+  .about-myself {
+    margin-top: 7em;
   }
 
   .my-resume {
@@ -568,7 +578,7 @@ textarea {
     border-top-left-radius: 105px;
     box-sizing: border-box;
     padding: 10%;
-    margin-top: 18%;
+    margin-top: 7em;
   }
 
   .contact .contact-me {
