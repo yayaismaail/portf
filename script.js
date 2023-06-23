@@ -14,7 +14,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 }));
 
 
-// Popup Window
+// Popup Window, Dynamic Rendering
 let html = '';
 
 popupArr = [
@@ -94,6 +94,7 @@ popupArr.forEach((card) => {
 const workSection = document.querySelector('.work-section');
 workSection.innerHTML = html;
 
+// Popup window section
 const workBtn = document.querySelectorAll('.work-btn');
 const popupContainer = document.querySelector('.popup-container');
 
