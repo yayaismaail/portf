@@ -94,48 +94,52 @@ popupArr.forEach((card) => {
 const workSection = document.querySelector('.work-section');
 workSection.innerHTML = html;
 
-// const workBtn = document.querySelectorAll('.work-btn');
-// const popupContainer = document.querySelector('.popup-container');
+const workBtn = document.querySelectorAll('.work-btn');
+const popupContainer = document.querySelector('.popup-container');
 
-// for (let index = 0; index < workBtn.length; index++) {
-//     workBtn[index].addEventListener('click', () => {
+for (let index = 0; index < workBtn.length; index++) {
+    workBtn[index].addEventListener('click', () => {
         
-//         const title = popupContainer.querySelector('.popup-title');
+        const mobileTitle = popupContainer.querySelector('.mobile-popup-title');
+        const desktopPopupTitle = popupContainer.querySelector('.desktop-popup-title');
         
-//         const canopy = popupContainer.querySelector('.canopy');
-//         const backEndDev = popupContainer.querySelector('.back-end-dev');
-//         const date = popupContainer.querySelector('.date');
+        const canopy = popupContainer.querySelector('.canopy');
+        const backEndDev = popupContainer.querySelector('.back-end-dev');
+        const date = popupContainer.querySelector('.date');
 
-//         const popupDesc = popupContainer.querySelector('.popup-desc');
+        const mobilePopupDesc = popupContainer.querySelector('.mobile-popup-desc');
+        const desktopPopupDesc = popupContainer.querySelector('.desktop-popup-desc');
 
-//         const popupTechsLink0 = popupContainer.querySelector('.popup-techs-link0');
-//         const popupTechsLink1 = popupContainer.querySelector('.popup-techs-link1');
-//         const popupTechsLink2 = popupContainer.querySelector('.popup-techs-link2');
+        const popupTechsLink0 = popupContainer.querySelector('.popup-techs-link0');
+        const popupTechsLink1 = popupContainer.querySelector('.popup-techs-link1');
+        const popupTechsLink2 = popupContainer.querySelector('.popup-techs-link2');
 
-//         const popupImg = popupContainer.querySelector('.popup-img');
+        const mobilepopupImg = popupContainer.querySelector('.mobile-popup-img');
+        const desktoppopupImg = popupContainer.querySelector('.desktop-popup-img');
 
-//         title.textContent = popupArr[index].mobileTitle;
-//         title.textContent = popupArr[index].desktopTitle;
+        mobileTitle.textContent = popupArr[index].mobileTitle;
+        desktopPopupTitle.textContent = popupArr[index].desktopTitle;
         
-//         canopy.textContent = popupArr[index].detail[0];
-//         backEndDev.textContent = popupArr[index].detail[1];
-//         date.textContent = popupArr[index].detail[2];
+        canopy.textContent = popupArr[index].detail[0];
+        backEndDev.textContent = popupArr[index].detail[1];
+        date.textContent = popupArr[index].detail[2];
 
-//         popupDesc.textContent = popupArr[index].description;
+        mobilePopupDesc.textContent = popupArr[index].description[0];
+        desktopPopupDesc.textContent = popupArr[index].description[1];
 
-//         popupTechsLink0.textContent = popupArr[index].stack[0];
-//         popupTechsLink1.textContent = popupArr[index].stack[1];
-//         popupTechsLink2.textContent = popupArr[index].stack[2];
+        popupTechsLink0.textContent = popupArr[index].stack[0];
+        popupTechsLink1.textContent = popupArr[index].stack[1];
+        popupTechsLink2.textContent = popupArr[index].stack[2];
 
-//         popupImg.setAttribute('src', popupArr[index].mobileImage);
-//         popupImg.setAttribute('src', popupArr[index].desktopImage);
+        mobilepopupImg.setAttribute('src', popupArr[index].mobileImage);
+        desktoppopupImg.setAttribute('src', popupArr[index].desktopImage);
 
-//         popupContainer.classList.remove('d-none');
-//     }
-// )};
+        popupContainer.classList.remove('d-none');
+    }
+)};
 
-// // popup close btn
-// const closeBtn = document.querySelector('.close-popup');
-// closeBtn.addEventListener('click', () => {
-//     popupContainer.classList.add('d-none');
-// });
+// popup close btn
+const closeBtn = document.querySelector('.close-popup');
+closeBtn.addEventListener('click', () => {
+    popupContainer.classList.add('d-none');
+});
