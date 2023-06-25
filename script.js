@@ -144,3 +144,23 @@ const closeBtn = document.querySelector('.close-popup');
 closeBtn.addEventListener('click', () => {
     popupContainer.classList.add('d-none');
 });
+
+
+// Validate Contact Form
+const form = document.querySelector('#form');
+const email = document.getElementById('email');
+const errorMessage = document.querySelector('.error-message');
+
+function showErrorMessage() {
+  if (email.value.trim() !== email.value.trim().toLowerCase()) { 
+    alert('Form not sent, press OK and scroll down')
+    errorMessage.textContent = 'Please, kindly use lowercase for the email address';
+  }
+};
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (email.value.trim() !== email.value.trim().toLowerCase()) {
+        showErrorMessage();  
+  }
+});
