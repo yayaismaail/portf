@@ -53,7 +53,7 @@ and using Layouts like Grid and Flexbox for position the elements and turning fi
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 <!-- - [Live Demo on Netlify](https://) -->
-- [Live Demo on Github pages](https://github.com/yayaismaail/portfolio/pull/1)
+<!-- - [Live Demo on Github pages](https:///) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
