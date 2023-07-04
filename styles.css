@@ -48,7 +48,6 @@ body {
   display: flex;
   flex-direction: column;
   border-bottom-left-radius: 75px;
-  border-bottom-left-radius: 10%;
   padding: 55px 20px 0;
 }
 
